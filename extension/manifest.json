@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "网校自动确认",
+  "version": "1.1.0",
+  "description": "自动点击广工商网校播放页的「学习验证」防刷课弹窗，点完自动恢复播放。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://usc.gzgs.edu.cn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://usc.gzgs.edu.cn/*"]
+    }
+  ]
+}
