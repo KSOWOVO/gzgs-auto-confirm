@@ -19,7 +19,7 @@ echo.
 
 if not exist "%SRC%\manifest.json" (
     echo   [X] 没找到 extension 文件夹。
-    echo       请确认「一键安装.bat」和「extension」文件夹
+    echo       请确认「install.bat」和「extension」文件夹
     echo       在同一个目录里（解压后就是这样，别单独拖出来）。
     echo.
     pause
