@@ -4,7 +4,7 @@
 > 一个装一次、永久生效的 Edge / Chrome 浏览器扩展。
 
 <p>
-  <img alt="version" src="https://img.shields.io/badge/version-1.0.0-2f6fed?style=flat-square">
+  <img alt="version" src="https://img.shields.io/badge/version-1.0.1-2f6fed?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Edge%20%7C%20Chrome-07c160?style=flat-square">
   <img alt="manifest" src="https://img.shields.io/badge/manifest-v3-8a2be2?style=flat-square">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-orange?style=flat-square">
@@ -41,30 +41,45 @@
 
 ---
 
-## 安装
+## 安装（4 步，约 1 分钟）
 
-> ⚠️ 本扩展尚未上架 Edge 加载项商店，因此需要走「开发者模式」安装。这是微软对所有第三方扩展的硬性要求，不是本项目偷懒。
+> ⚠️ 本扩展尚未上架 Edge 加载项商店，因此需要走「开发者模式」手动加载一次。这是微软对所有第三方扩展的硬性要求，不是本项目偷懒。
 
-### 方式一：一键安装脚本（推荐给同学）
+### 准备
 
-1. 到 [Releases](../../releases) 页面下载最新的 `gzgs-auto-confirm-v1.0.0.zip`
-2. **解压**到一个你不会随手删掉的位置
-3. 双击解压出来的 **`install.bat`**
-4. 脚本会自动打开扩展管理页、并把路径复制到剪贴板，你只要：
-   - 打开左下角「**开发人员模式**」
-   - 点左上角「**加载解压缩的扩展**」
-   - 在地址栏 `Ctrl+V` 粘贴路径，回车，点「选择文件夹」
+到 [Releases](../../releases) 页面下载 `gzgs-auto-confirm-v1.0.1.zip`，解压到一个不会被随手删掉的位置。解压后应该看到两个东西：
 
-### 方式二：完全手动（4 步）
+```
+gzgs-auto-confirm-v1.0.1/
+├── extension/          ← 扩展本体，待会儿要选这个文件夹
+└── INSTALL.txt
+```
 
-1. 把 `extension` 文件夹放到一个固定位置，例如
-   `C:\Users\你的用户名\Documents\Edge扩展\gzgs-auto-confirm`
-2. 浏览器地址栏输入 `edge://extensions/` 回车
-3. **左下角**打开「开发人员模式」
-4. 左上角点「**加载解压缩的扩展**」→ 选中上一步的 `extension` 文件夹
-5. 回到网校页面按 `F5` 刷新
+### 第 1 步 · 打开开发人员模式
 
-> Chrome 用户把地址换成 `chrome://extensions/`，其余步骤完全一样。
+浏览器地址栏输入 `edge://extensions/` 回车。找到**页面左下角**的「开发人员模式」，点一下，让灰色开关变成蓝色。
+
+<img src="assets/step1-open-devtools.png" alt="打开开发人员模式" width="760">
+
+### 第 2 步 · 点「加载解压缩的扩展」
+
+开关点亮后，**左上角**会多出三个按钮，点最左边那个蓝色的。
+
+<img src="assets/step2-load-unpacked.png" alt="点加载解压缩的扩展" width="760">
+
+### 第 3 步 · 选中 extension 文件夹
+
+弹出一个选择窗口，找到刚才解压出来的 `extension` 文件夹，**选中它**（是选中文件夹本身，**不要**双击点进去），然后点右下角「选择文件夹」。
+
+<img src="assets/step3-select-folder.png" alt="选中 extension 文件夹" width="760">
+
+### 第 4 步 · 完成
+
+扩展列表里出现「网校自动确认」这张卡片，就装好了。回到网校页面按 `F5` 刷新。
+
+<img src="assets/step4-done.png" alt="安装完成" width="760">
+
+> **Chrome 用户注意**：地址换成 `chrome://extensions/`，但 Chrome 的「开发者模式」开关在**右上角**，不在左下角。
 
 ---
 
